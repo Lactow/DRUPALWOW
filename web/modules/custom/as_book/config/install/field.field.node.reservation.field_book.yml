@@ -2,26 +2,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_genre
+    - field.storage.node.field_book
     - node.type.as_book
-    - taxonomy.vocabulary.genre
-id: node.as_book.field_genre
-field_name: field_genre
+    - node.type.reservation
+id: node.reservation.field_book
+field_name: field_book
 entity_type: node
-bundle: as_book
-label: Genre
-description: ''
-required: false
+bundle: reservation
+label: Livre
+description: 'The BOOK booked !'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:node'
   handler_settings:
     target_bundles:
-      genre: genre
+      as_book: as_book
     sort:
       field: _none
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

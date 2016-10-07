@@ -1,8 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-name: Auteur
-vid: author
-description: ''
-hierarchy: 0
+id: anonymous
+label: 'Anonymous user'
 weight: 0
+is_admin: false

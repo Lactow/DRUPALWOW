@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: as_cover_style
+label: cover_style
+effects:
+  da02b9c2-ff43-467f-8e05-0af841fff6d6:
+    uuid: da02b9c2-ff43-467f-8e05-0af841fff6d6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220

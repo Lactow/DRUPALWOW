@@ -8,10 +8,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Livre
-type: as_book
-description: 'Provides a Book content type for the website.'
+name: Reservation
+type: reservation
+description: 'Booking a book to book book and read a booked book.'
 help: ''
 new_revision: false
-preview_mode: 0
-display_submitted: false
+preview_mode: 1
+display_submitted: true

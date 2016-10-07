@@ -3,15 +3,15 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.as_book
+    - node.type.reservation
   module:
     - text
-id: node.as_book.body
+id: node.reservation.body
 field_name: body
 entity_type: node
-bundle: as_book
-label: Description
-description: ''
+bundle: reservation
+label: Notes
+description: 'Type a note aout the bookng'
 required: false
 translatable: true
 default_value: {  }

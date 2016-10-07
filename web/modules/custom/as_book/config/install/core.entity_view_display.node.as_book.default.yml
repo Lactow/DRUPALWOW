@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.as_book.field_genre
     - field.field.node.as_book.field_publisher
     - field.field.node.as_book.field_reference
+    - image.style.as_cover_style
     - node.type.as_book
   module:
     - image
@@ -19,23 +20,25 @@ bundle: as_book
 mode: default
 content:
   body:
-    label: hidden
-    type: text_default
+    label: inline
+    type: text_trimmed
     weight: 101
-    settings: {  }
+    settings:
+      trim_length: 140
     third_party_settings: {  }
   field_author:
     weight: 103
     label: above
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
   field_cover:
     weight: 105
     label: above
     settings:
-      image_style: ''
+      image_style: as_cover_style
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -44,8 +47,9 @@ content:
     label: above
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
   field_publisher:
     weight: 106
     label: above
@@ -62,4 +66,6 @@ content:
     type: string
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
