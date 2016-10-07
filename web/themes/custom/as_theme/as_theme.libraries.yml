@@ -1,0 +1,6 @@
+global_styling:
+    css:
+      theme:
+        libraries/global_styling/css/theme.css: {}
+    js:
+      libraries/global_styling/js/main.js: {}
